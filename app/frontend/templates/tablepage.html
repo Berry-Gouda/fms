@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{.Name}} Overview</title>
+        <link rel="stylesheet" href="/static/styles/global.css">
+        <link rel="stylesheet" href="/static/styles/tableoverview.css">
+    </head>
+    <body>
+        <h1 id="t-title">{{.Name}}</h1>
+        <div class="grid-container">
+            <div class="t-overview">
+                <div>
+                    <h2 id="t-overview-header">Table Overview</h2>
+                    <table>
+                        <tr id="table-header">
+                            <th>Column Name</th>
+                            <th>Data Type</th>
+                            <th>Key Type</th>
+                            <th>Nullable</th>
+                            <th>Default Value</th>
+                        </tr>
+                        {{range .SchemaInfo}}
+                        <tr class="column-tr">
+                            <td>{{.ColName}}</td>
+                            <td>{{.DType}}</td>
+                            <td>{{.KeyType}}</td>
+                            <td>{{.IsNull}}</td>
+                            <td>{{.ColDefault}}</td>
+                        </tr>
+                        {{end}}
+                    </table>
+                </div>
+                <div id="data-snap">
+                    <h2>Data Snapshot</h2>
+                    <p>Row Count: {{.RowCount}}</p>
+                </div>
+            </div>
+            <div id="search-div">
+                <input id="search-input" type="text"><br>
+                <button id="search-btn" onclick="sendSearch()" type="submit" value="">Search</button>
+            </div>
+            <div class="action-btns">
+                <button id="bulk-insert" onclick="getCSV()">Bulk Insert</button>
+            </div>
+            <div class="results-area">
+                <h2>Random 20 Rows</h2>
+                <table>
+                    <tr id="table-header">
+                        {{range .SchemaInfo}}
+                        <th>{{.ColName}}</th>
+                        {{end}}
+                        {{range .RandRows}}
+                        <tr>
+                            {{range $value := .}}
+                                <td>{{$value}}</td>
+                            {{end}}
+                        </tr>
+                        {{end}}
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="/static/scripts/tableOverview.js"></script>
+    </body>
+</html>

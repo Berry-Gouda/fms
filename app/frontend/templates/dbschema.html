@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FMS-P1-Schema Overview</title>
+        <link rel="stylesheet" href="../styles/global.css">
+        <link rel="stylesheet" href="../styles/dbschema.css">
+    </head>
+    <body>
+        <div class="container">
+            <canvas id="schemaCanvas"></canvas>
+            <!--Left Buttons-->
+            <div id="item" class="tbl-btn" style="top: 200px; left: 150px;">item</div>
+            <div id="recipe" class="tbl-btn" style="top: 680px; left: 150px;">recipe</div>
+
+            <!--Middle Buttons-->
+            <div id="nutjunc" class="tbl-btn" style="top: 50px; left: 650px;">nutrition_junc</div>
+            <div id="convjunc" class="tbl-btn" style="top: 210px; left: 650px;">conversion_junc</div>
+            <div id="tagsjunc" class="tbl-btn" style="top: 370px; left: 650px;">tag_junc</div>
+            <div id="recitjunc" class="tbl-btn" style="top: 530px; left: 650px;">recipe_item_junc</div>
+            <div id="timejunc" class="tbl-btn" style="top: 690px; left: 650px;">timing_junc</div>
+            <div id="methjunc" class="tbl-btn" style="top: 850px; left: 650px;">method_junc</div>
+
+            <!--Right Buttons-->
+            <div id="nutlu" class="tbl-btn" style="top: 50px; left: 1200px;">nutrient_lu</div>
+            <div id="nutcatlu" class="tbl-btn" style="top: 210px; left: 1200px;">nutrient_cat_lu</div>
+            <div id="unitlu" class="tbl-btn" style="top: 370px; left: 1200px;">unit_lu</div>
+            <div id="tagslu" class="tbl-btn" style="top: 530px; left: 1200px;">tag_lu</div>
+            <div id="timeingslu" class="tbl-btn" style="top: 690px; left: 1200px;">timing_lu</div>
+            <div id="methods" class="tbl-btn" style="top: 850px; left: 1200px;">method</div>
+
+            <!--User Buttons-->
+            <div id="user" class="tbl-btn" style="top: 435px; left: 25px;">user</div>
+            <div id="invitem" class="tbl-btn" style="top: 435px; left: 375px;">inv_item</div>
+
+
+        </div>
+        <script src="../scripts/schema.js"></script>
+    </body>
+</html>

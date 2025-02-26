@@ -1,0 +1,24 @@
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vw;
+}
+.tbl-btn{
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    background-color: #a8c5ff;
+    border: 2px solid #0047ab;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
