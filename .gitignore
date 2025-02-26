@@ -1,0 +1,6 @@
+Meta-Llama-3.1-8B-Instruct-Q8_0.gguf
+llama.cpp/
+**/.env
+**/.csv
+venv/
+app/frontend/node_modules/
