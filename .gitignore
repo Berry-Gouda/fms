@@ -3,3 +3,4 @@ llama.cpp/
 *.csv
 venv/
 app/frontend/node_modules/
+*.zip
