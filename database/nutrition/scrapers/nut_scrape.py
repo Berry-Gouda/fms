@@ -13,9 +13,9 @@ import traceback
 
 
 #Some config data 
-BASE_WEBSITE = 'https://www.nutritionvalue.org'
-FOODS_START_MOD = '/foods_start_with_'
-BRANDS_START_MOD = 'food_brand_starts_with_'
+BASE_WEBSITE = 
+FOODS_START_MOD = 
+BRANDS_START_MOD = 
 SITE_END = '.html'
 PAGE_COUNTER = 'page_'
 LETTER_LIST = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 
